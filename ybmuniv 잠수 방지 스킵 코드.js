@@ -13,9 +13,7 @@ function startAutoSkip() {
             if (!iframeDoc) return;
 
             const yesImg = iframeDoc.querySelector('img[src="images/yes1.gif"]');
-            if (yesImg) {
-                iframe.contentWindow.lecture_ok();  // 잠수 방지 스킵
-            }
+            if (yesImg) iframe.contentWindow.lecture_ok();  // 잠수 방지 스킵
         } catch (e) {
         }
     }, 1000);  // 1초마다 감지
